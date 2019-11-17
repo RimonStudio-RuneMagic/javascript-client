@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RuneMagic</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js"></script>
+    <script src="./rune_magic.js"></script>
+</head>
+<body style="font-family: monospace">
+
+<script>
+    const TOKEN = 'put_your_token_here';
+
+    function callback(data) {
+      document.body.innerHTML += '<div>' + JSON.stringify(data) + '</div>';
+    }
+
+    RuneMagic.setErrorCallback((error) => console.log("Error occurred: " + error));
+    RuneMagic.setDisconnectCallback(() => console.log("Disconnected"));
+    RuneMagic.connect(TOKEN, callback, 'localhost:5000/');
+</script>
+</body>
+</html>
