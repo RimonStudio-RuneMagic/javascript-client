@@ -36,20 +36,7 @@ RuneMagic.connect(TOKEN, callback);
 ```
 
 ## Runes data
-Every rune data object will contain the rune id, its up time and a list of sensors.
-For a detailed description of the data please look at [TODO: create a detailed data page]
-
-Example:
-```javascript
-const rd = {
-  "id": "00000001-645923A4AE30",
-  "uptime": 4765,
-  "sensors": [{
-    "id": 252,
-    "data": ["1b:a3:c0:05:79:e4", "2a:ba:60:49:d9:c0", "36:a8:c9:1d:83:05", "68:d9:3c:8e:8d:12", "LG SJ9(EB:F0)"]
-  }]
-}
-```
+Every rune data object will contain an object as described in [runes data documentation](https://github.com/RimonStudio-RuneMagic/runes-data)
 
 
 ## Contributing
