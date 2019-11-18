@@ -4,20 +4,22 @@ Client library to start using Rune Magic using Javascript
 A simple example exists at [example.html](./example.html).
 
 ## Installation
+
+RuneMagic uses socket.io, so include the library or add a script tag:
+```html
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js"></script>
+```
+
+
 By including [rune_magic.js](rune_magic.js) in your project you will gain access to a RuneMagic object:
 ```javascript
 // You can use either RuneMagic or window.RuneMagic
 const rm = window.RuneMagic; 
 ```
 
-You can also use a CDN:
+You can also include RuneMagic with a script tag:
 ```html
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/RimonStudio-RuneMagic/javascript-client/rune_magic.js"></script>
-```
-
-RuneMagic uses socket.io, so include the library or add a script tag:
-```html
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js"></script>
 ```
 
 ## Usage
