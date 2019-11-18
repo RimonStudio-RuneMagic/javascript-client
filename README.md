@@ -15,6 +15,11 @@ You can also use a CDN:
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/RimonStudio-RuneMagic/javascript-client/rune_magic.js"></script>
 ```
 
+RuneMagic uses socket.io, so include the library or add a script tag:
+```html
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js"></script>
+```
+
 ## Usage
 You need to acquire a token for any of the calls:
 ```javascript
